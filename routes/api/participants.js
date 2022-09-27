@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
   const { name, company, compAddress, email, hp, jabatan, role, size } = req.body;
   try {
-    const participantExist = await Participants.findOne(email)
+    const participantExist = await Participants.findOne({Email:email})
 
     if (participantExist) {
       return res.status(200).json(participantExist)
