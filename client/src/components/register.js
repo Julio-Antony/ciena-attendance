@@ -152,7 +152,7 @@ const Register = () => {
                 </label>
                 <select className="form-select" id="isUsefull" aria-label="Default select example" onChange={(e) => setJabatan(e.target.value)}>
                   {/* <option selected>Pilih</option> */}
-                  <option value={"CTO"} defaultValue={jabatan === ""}>Pilih Jabatan</option>
+                  <option value={""} defaultValue={jabatan === ""}>Pilih Jabatan</option>
                   <option value={"CTO"} defaultValue={jabatan === "CTO"}>CTO</option>
                   <option value={"SVP"} defaultValue={jabatan === "SVP"}>SVP</option>
                   <option value={"GM"} defaultValue={jabatan === "GM"}>GM</option>
@@ -165,7 +165,7 @@ const Register = () => {
                   </label>
                   <select className="form-select" id="isUsefull" aria-label="Default select example" onChange={(e) => setRole(e.target.value)}>
                   {/* <option selected>Pilih</option> */}
-                  <option value={"Sales"} defaultValue={role === ""}>Pilih Role Jabatan</option>
+                  <option value={""} defaultValue={role === ""}>Pilih Role Jabatan</option>
                   <option value={"Sales"} defaultValue={role === "Sales"}>Sales</option>
                   <option value={"Planning"} defaultValue={role === "Planning"}>Planning</option>
                   <option value={"Project"} defaultValue={role === "Project"}>Project</option>
@@ -178,12 +178,11 @@ const Register = () => {
                   </label>
                   <select className="form-select" id="isUsefull" aria-label="Default select example" onChange={(e) => setSize(e.target.value)}>
                   {/* <option selected>Pilih</option> */}
-                  <option value={"S"} defaultValue={size === ""}>Pilih Ukuran Baju</option>
+                  <option value={""} defaultValue={size === ""}>Pilih Ukuran Baju</option>
                   <option value={"S"} defaultValue={size === "S"}>S</option>
                   <option value={"M"} defaultValue={size === "M"}>M</option>
                   <option value={"L"} defaultValue={size === "L"}>L</option>
                   <option value={"XL"} defaultValue={size === "XL"}>XL</option>
-                  <option value={"XXL"} defaultValue={size === "XXL"}>XXL</option>
                   </select>
                 </div>
                 <div className="col-12 text-center mb-3">
