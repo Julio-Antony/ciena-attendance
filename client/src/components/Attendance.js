@@ -98,10 +98,6 @@ const Attendance = () => {
       selector: (row) => row.HP,
     },
     {
-      name: "Jabatan",
-      selector: (row) => row.Jabatan,
-    },
-    {
       name: "Role",
       selector: (row) => row.Role,
     },
@@ -112,7 +108,7 @@ const Attendance = () => {
   ];
 
   return (
-    <div className="row">
+    <div className="row p-3">
       <div className="col-md-10 offset-md-1">
         <div className="card mb-3">
           <DataTable

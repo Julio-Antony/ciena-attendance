@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
 
 //Add Participant
 router.post('/', async (req, res) => {
-  const { name, company, compAddress, email, hp, jabatan, role, size } = req.body;
+  const { name, company, compAddress, email, hp, role, size } = req.body;
   try {
     const participantExist = await Participants.findOne({$or:[{"Email":email},{"Nama":name}]})
 
@@ -37,7 +37,6 @@ router.post('/', async (req, res) => {
       HP : hp,
       Perusahaan : company,
       Alamat_Perusahaan : compAddress,
-      Jabatan : jabatan,
       Role : role,
       Ukuran_Baju : size,
       IsRegist : true

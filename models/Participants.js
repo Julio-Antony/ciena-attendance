@@ -15,16 +15,13 @@ const ParticipantsSchema = new Schema({
     type: String
   },
   Perusahaan: {
-    type: String,
+    type: String
   },
   Alamat_Perusahaan: {
     type: String
   },
-  Jabatan: {
-    type: String
-  },
   Role: {
-    type: String,
+    type: String
   },
   Ukuran_Baju: {
     type: String

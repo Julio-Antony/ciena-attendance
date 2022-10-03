@@ -11,7 +11,6 @@ const Register = () => {
   const [compAddress, setCompAddress] = useState("")
   const [email, setEmail] = useState("");
   const [hp, setHp] = useState("")
-  const [jabatan, setJabatan] = useState("");
   const [ role, setRole] = useState("");
   const [ size, setSize] = useState("");
   const [loading, setLoading] = useState(false);
@@ -28,7 +27,6 @@ const Register = () => {
     compAddress : compAddress, 
     email : email,
     hp : hp, 
-    jabatan : jabatan, 
     role : role, 
     size : size
   });
@@ -145,19 +143,6 @@ const Register = () => {
                     onChange={(e) => setHp(e.target.value)}
                     required
                   />
-                </div> 
-                <div className="col-md-12">
-                <label htmlFor="isUsefull" className="form-label">
-                  Jabatan
-                </label>
-                <select className="form-select" id="isUsefull" aria-label="Default select example" onChange={(e) => setJabatan(e.target.value)}>
-                  {/* <option selected>Pilih</option> */}
-                  <option value={""} defaultValue={jabatan === ""}>Pilih Jabatan</option>
-                  <option value={"CTO"} defaultValue={jabatan === "CTO"}>CTO</option>
-                  <option value={"SVP"} defaultValue={jabatan === "SVP"}>SVP</option>
-                  <option value={"GM"} defaultValue={jabatan === "GM"}>GM</option>
-                  <option value={"Manager"} defaultValue={jabatan === "Manager"}>Manager</option>
-                </select>
                 </div>
                 <div className="col-md-12">
                   <label htmlFor="need" className="form-label">
