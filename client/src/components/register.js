@@ -12,7 +12,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [hp, setHp] = useState("")
   const [ role, setRole] = useState("");
-  const [ size, setSize] = useState("");
+  // const [ size, setSize] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const {
@@ -28,7 +28,7 @@ const Register = () => {
     email : email,
     hp : hp, 
     role : role, 
-    size : size
+    // size : size
   });
 
   const onSubmit = () => {
@@ -144,32 +144,47 @@ const Register = () => {
                     required
                   />
                 </div>
-                <div className="col-md-12">
+                <div className="col-md-12 mb-3">
+                  <label htmlFor="role" className="form-label">
+                    Role Jabatan
+                  </label>
+                  <input
+                    type="text"
+                    className={`form-control ${role !== "" ? "is-valid" : ""}`}
+                    id="role"
+                    aria-invalid={errors.name ? "true" : "false"}
+                    {...register("role")}
+                    value={role}
+                    onChange={(e) => setRole(e.target.value)}
+                    required
+                  />
+                </div>
+                {/* <div className="col-md-12">
                   <label htmlFor="need" className="form-label">
                     Role jabatan
                   </label>
-                  <select className="form-select" id="isUsefull" aria-label="Default select example" onChange={(e) => setRole(e.target.value)}>
+                  <select className="form-select" id="isUsefull" aria-label="Default select example" onChange={(e) => setRole(e.target.value)}> */}
                   {/* <option selected>Pilih</option> */}
-                  <option value={""} defaultValue={role === ""}>Pilih Role Jabatan</option>
+                  {/* <option value={""} defaultValue={role === ""}>Pilih Role Jabatan</option>
                   <option value={"Sales"} defaultValue={role === "Sales"}>Sales</option>
                   <option value={"Planning"} defaultValue={role === "Planning"}>Planning</option>
                   <option value={"Project"} defaultValue={role === "Project"}>Project</option>
                   <option value={"Purchasing"} defaultValue={role === "Purchasing"}>Purchasing</option>
-                </select>
-                </div>
+                </select> */}
+                {/* </div>
                 <div className="col-md-12 mb-3">
                   <label htmlFor="need" className="form-label">
                     Ukuran Baju
                   </label>
-                  <select className="form-select" id="isUsefull" aria-label="Default select example" onChange={(e) => setSize(e.target.value)}>
+                  <select className="form-select" id="isUsefull" aria-label="Default select example" onChange={(e) => setSize(e.target.value)}> */}
                   {/* <option selected>Pilih</option> */}
-                  <option value={""} defaultValue={size === ""}>Pilih Ukuran Baju</option>
+                  {/* <option value={""} defaultValue={size === ""}>Pilih Ukuran Baju</option>
                   <option value={"S"} defaultValue={size === "S"}>S</option>
                   <option value={"M"} defaultValue={size === "M"}>M</option>
                   <option value={"L"} defaultValue={size === "L"}>L</option>
                   <option value={"XL"} defaultValue={size === "XL"}>XL</option>
                   </select>
-                </div>
+                </div> */}
                 <div className="col-12 text-center mb-3">
                   <button
                     className="btn"

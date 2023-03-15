@@ -101,10 +101,10 @@ const Attendance = () => {
       name: "Role",
       selector: (row) => row.Role,
     },
-    {
-      name: "Ukuran Baju",
-      selector: (row) => row.Ukuran_Baju,
-    },
+    // {
+    //   name: "Ukuran Baju",
+    //   selector: (row) => row.Ukuran_Baju,
+    // },
   ];
 
   return (
