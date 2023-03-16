@@ -98,7 +98,7 @@ const Attendance = () => {
       selector: (row) => row.HP,
     },
     {
-      name: "Role",
+      name: "Divisi",
       selector: (row) => row.Role,
     },
     // {

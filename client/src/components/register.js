@@ -146,7 +146,7 @@ const Register = () => {
                 </div>
                 <div className="col-md-12 mb-3">
                   <label htmlFor="role" className="form-label">
-                    Role Jabatan
+                    Divisi
                   </label>
                   <input
                     type="text"
